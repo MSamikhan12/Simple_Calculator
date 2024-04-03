@@ -3,8 +3,8 @@ import inquirer from "inquirer";
 let message = "Welcome to my project simple calculator";
 console.log(message);
 const answer = await inquirer.prompt([
-    { message: "Enter first number", type: "number", name: "firstnumber" },
-    { message: "Enter second number", type: "number", name: "secondnumber" },
+    { message: "Kindly enter first number", type: "number", name: "firstnumber" },
+    { message: "Kindly enter second number", type: "number", name: "secondnumber" },
     {
         message: "select one of the operators to perform operation",
         type: "list",
@@ -28,3 +28,5 @@ else if (answer.operator === "Division") {
 else {
     console.log("please select valid operator");
 }
+console.log("Thank you");
+console.log("have a good day");
